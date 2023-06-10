@@ -168,4 +168,17 @@ ul li span:hover {
         border-radius: 40px;
         margin: 8px;
     }
+
+    ul li::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        position: absolute;
+        background-image: url(../images/unchecked.png);
+        background-size: cover;
+        background-position: center;
+        left: 8px;
+        top: 8px;
+    }
 }   
