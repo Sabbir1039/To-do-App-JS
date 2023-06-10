@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background: linear-gradient(105deg, #14d9e7, #90f1f3);
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px;
+}
+
+.to-do-app {
+    width: 100%;
+    max-width: 540px;
+    min-height: 300px;
+    background: #fff;
+    margin: 70px auto 25px;
+    border-radius: 10px;
+    padding: 40px 70px 40px;
+}
+
+.to-do-app h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+h1 img {
+    width: 32px;
+    height: auto;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: no-wrap;
+    background: #e3e5e6;
+    padding-left:18px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 16px 50px;
+    background: #e35239;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+} 
+
+ul li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px; 
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(../images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: #edeef0;
+}
+
+
+@media screen and (max-width: 400px) {
+    .input-box {
+        width: 160px;
+        flex-wrap: wrap;
+    }
+}   
