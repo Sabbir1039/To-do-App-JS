@@ -108,6 +108,7 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    margin-right: -20px;
 }
 
 ul li span:hover {
@@ -124,9 +125,9 @@ ul li span:hover {
         width: 18px;
     }
     .input-box {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         background-color: #fff;
         padding-left: 0;
     }
@@ -141,26 +142,13 @@ ul li span:hover {
         position: absolute;
         right: 0;
         top: 1px;
-        width: 40px;
-        height: 40px;
-        font-size: 24px;
-        color: #555;
-        line-height: 40px;
-        text-align: center;
-        border-radius: 50%;
-        margin-left: 8px;
+        margin-right: -20px;
+        color: red;
     }
 
     button {
-        border: none;
-        border-radius: 30px;
-        outline: none;
         padding: 8px 12px;
-        background: #e35239;
-        color: white;
         font-size: 14px;
-        cursor: pointer;
-        flex-shrink: 0;
     } 
 
     input {
@@ -173,11 +161,7 @@ ul li span:hover {
         content: "";
         width: 24px;
         height: 24px;
-        border-radius: 50%;
         position: absolute;
-        background-image: url(../images/unchecked.png);
-        background-size: cover;
-        background-position: center;
         left: 8px;
         top: 8px;
     }
